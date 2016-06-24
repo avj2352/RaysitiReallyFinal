@@ -33,7 +33,7 @@
 			isSeeking = false,
 			isPlaying = false,
 			isQueued = false,
-			isAmbient = false,
+			isAmbient = true,
 			playlist = [],
 			currMediaIndex,
 			currMediaType;
