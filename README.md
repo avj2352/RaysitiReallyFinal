@@ -1,4 +1,5 @@
-# Raysiti Code for BigVideo and Smooth Scroll.
+#Generated Favicon and Links
+#Raysiti Code for BigVideo and Smooth Scroll.
 #Instructions for Custom BigVideo Plugin :+1:
 ###NOTE: Bigvideo will always automatically come on top of the Website, the code is in bigvideo.js
 
