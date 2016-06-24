@@ -2,7 +2,7 @@
 #Instructions for Custom BigVideo Plugin :+1:
 ###NOTE: Bigvideo will always automatically come on top of the Website, the code is in bigvideo.js
 
-##1. The following Dependencies are required and can be all found inside the util folder
+####1. The following Dependencies are required and can be all found inside the util folder
 ```
     1. <script type="text/javascript" src="scripts/util/jquery.imagesloaded.min.js"></script>
     2. <script type="text/javascript" src="scripts/util/jquery-ui-1.8.22.custom.min.js"></script>
@@ -12,7 +12,7 @@
 ```
 ###NOTE: For some weird reason, the customjQueryPlugins.js has to be at the BOTTOM MOST PART OF THE SCRIPT LIST.
 
-##2. The following CSS Scripts is required to make the Video responsive and found inside the custom.css filter
+####2. The following CSS Scripts is required to make the Video responsive and found inside the custom.css filter
 
 ```
     /*This is for controlling the Width of BigVideo for mobile*/
@@ -48,14 +48,14 @@
 ```
 
 # Instructions for Smooth scroll
-##1. The following Dependencies is required for smooth scroll
+####1. The following Dependencies is required for smooth scroll
 The Online link containing the documentation can be found in [http://areaaperta.com/nicescroll/]
 ```
 <script type="text/javascript" src="scripts/util/jquery.nicescroll.min.js">
 ```
-##2. Once the above code is inserted, Just invoke smooth scroll in your custom JS script (customjQueryPlugins.js)
+####2. Once the above code is inserted, Just invoke smooth scroll in your custom JS script (customjQueryPlugins.js)
 ```
 $("html").niceScroll();
 ```
 
-Documentation and Code by yours truly @avj2352 Pramod Jingade
+Documentation and Code by yours truly [avj2352 Pramod Jingade]
