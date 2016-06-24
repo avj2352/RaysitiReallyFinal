@@ -6,23 +6,23 @@
   <meta name="description" content="There and back again.... A Raysiti Website !!">
   <meta name="author" content="RAYSITI Media And Entertainment">
   <!-- Favicon -->
-<link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
   <link rel="stylesheet" href="styles/bootstrap.css" media="screen" title="no title" charset="utf-8">
   <link rel="stylesheet" href="styles/custom.css" media="screen" title="no title" charset="utf-8">
@@ -44,8 +44,8 @@
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#" title="Home">YES</a></li>
-          <li><a href="#" title="About Us">WE</a></li>
+          <li class="active"><a href="#home" title="Home">YES</a></li>
+          <li><a href="#aboutUs" title="About Us">WE</a></li>
           <li class="dropdown">
             <a href="#" title="Our Works" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">WORK<span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
@@ -68,37 +68,49 @@
     </div>
   </nav>
   <!-- end:Navigation div -->
-      <div class="container">
-      <div class="row mainContent" ng-controller="mainController">
-      <h2>Example body text</h2>
+  <div class="container mainContent">
+    <!-- home -->
+    <div class="row" id="home" ng-controller="mainController">
+      <h2>Conglomerate <small>of Integrated Branding &amp; Multimedia Solution</small></h2>
       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+      <ul class="pager">
+        <li><a href="#">Read More...</a></li>
+      </ul>
       <hr>
+    </div>
+    <!-- end:home -->
+    <!-- aboutUs -->
+    <div class="row" id="aboutUs" ng-controller="mainController">
+      <h2>About <small>Raysiti Solutions</small></h2>
       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+      <ul class="pager">
+        <li><a href="#">Read More...</a></li>
+      </ul>
+    </div>
+    <!-- end:aboutUs -->
+  </div>
 
-        </div>
-      </div>
-
-      <script type="text/javascript" src="scripts/lib/jquery-1.11.2.min.js"></script>
-      <script type="text/javascript" src="scripts/lib/bootstrap.min.js"></script>
-      <!-- Angular Dependencies -->
-      <script type="text/javascript" src="scripts/lib/angular.min.js"></script>
-      <script type="text/javascript" src="scripts/lib/angular-animate.min.js"></script>
-      <script type="text/javascript" src="scripts/lib/angular-route.min.js"></script>
-      <script type="text/javascript" src="scripts/app.js"></script>
-      <script type="text/javascript" src="scripts/controllers/mainController.js"></script>
-      <script type="text/javascript" src="scripts/services/dataService.js"></script>
-      <!-- jQuery NiceScroll to scroll Nicely!! -->
-      <script type="text/javascript" src="scripts/util/jquery.nicescroll.min.js">
-      </script>
-      <!-- BigVideo dependency Scripts -->
-      <script type="text/javascript" src="scripts/util/jquery.imagesloaded.min.js"></script>
-      <script type="text/javascript" src="scripts/util/jquery-ui-1.8.22.custom.min.js"></script>
-      <script type="text/javascript" src="scripts/util/bigvideo.js"></script>
-      <script src="http://vjs.zencdn.net/c/video.js"></script>
-      <script type="text/javascript" src="scripts/customjQueryPlugins.js"></script>
-    </body>
-    </html>
+  <script type="text/javascript" src="scripts/lib/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="scripts/lib/bootstrap.min.js"></script>
+  <!-- Angular Dependencies -->
+  <script type="text/javascript" src="scripts/lib/angular.min.js"></script>
+  <script type="text/javascript" src="scripts/lib/angular-animate.min.js"></script>
+  <script type="text/javascript" src="scripts/lib/angular-route.min.js"></script>
+  <script type="text/javascript" src="scripts/app.js"></script>
+  <script type="text/javascript" src="scripts/controllers/mainController.js"></script>
+  <script type="text/javascript" src="scripts/services/dataService.js"></script>
+  <!-- jQuery NiceScroll to scroll Nicely!! -->
+  <script type="text/javascript" src="scripts/util/jquery.nicescroll.min.js">
+  </script>
+  <!-- BigVideo dependency Scripts -->
+  <script type="text/javascript" src="scripts/util/jquery.imagesloaded.min.js"></script>
+  <script type="text/javascript" src="scripts/util/jquery-ui-1.8.22.custom.min.js"></script>
+  <script type="text/javascript" src="scripts/util/bigvideo.js"></script>
+  <script src="http://vjs.zencdn.net/c/video.js"></script>
+  <script type="text/javascript" src="scripts/customjQueryPlugins.js"></script>
+</body>
+</html>

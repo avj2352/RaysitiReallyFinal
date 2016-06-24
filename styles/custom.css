@@ -39,10 +39,9 @@ a.navbar-brand>img { position: relative; top: -29px; }
 .navbar.navbar-inverse{ width: 100%; }
 
 /*Because of the static position of the BigVideo - applying absolute position to the main content*/
-.mainContent{
-  position: relative;
-  top:580px;
-}
+.mainContent{ position: relative; top:580px; }
+.mainContent h2{text-align: center;}
+.mainContent h2>small{color: inherit;}
 
 video { display: block; }
 
