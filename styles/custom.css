@@ -32,11 +32,11 @@
 
 
 
+/*Navigation Logo position*/
+a.navbar-brand>img { position: relative; top: -29px; }
 
 /*Making the Navigation also 100% for all devices*/
-.navbar.navbar-inverse{
-width: 100%;
-}
+.navbar.navbar-inverse{ width: 100%; }
 
 video { display: block; }
 
