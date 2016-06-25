@@ -42,9 +42,42 @@ a.navbar-brand>img { position: relative; top: -29px; }
 .mainContent{ position: relative; top:580px; }
 .mainContent h2{text-align: center;}
 .mainContent h2>small{color: inherit;}
-
 video { display: block; }
 
+/*Logo Questionnaire Section*/
+#questionSection{
+    /*border: 1px solid red;*/
+    background-position: 50% -125px;
+    font-size: 20px;
+    margin-left:0px;
+    margin-right:0px;
+    position: relative;
+    color: #fff;
+    border-top: 10px double rgba(0,0,0,.4);
+    border-radius: 15px;
+    border-bottom: 10px double rgba(0,0,0,.4);
+    background: url('../images/ideate_bg.jpg') 0 0 repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    /*z-index: -1;*/
+    width: 100%;
+    padding: 0px 0px 0px 20px;
+    /*padding-top: 120px;*/
+    padding-bottom: 120px;
+    margin-bottom: 10px;
+}
+
+#questionSection h2{
+  color: #fff;
+}
+
+#questionSection hr{
+  position: relative;
+  left: -1%;
+  display: block;
+  margin: 0px 0px 20px 0px;
+}
 
 @media screen and (max-device-width: 800px) {
     html { background: #000 no-repeat center center fixed; }
