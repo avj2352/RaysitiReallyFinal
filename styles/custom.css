@@ -1,14 +1,8 @@
+/*Custom WebSLeekly Fonts*/
+@font-face { font-family: weblysleek; src: url(../fonts/weblysleekuil.ttf); }
 /*This is for IE to understand video tags*/
 /*This is for controlling the Width of BigVideo for mobile*/
-#big-video-wrap {
-    overflow: hidden;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 50px;
-    left: 0;
-}
-
+#big-video-wrap { overflow: hidden; position: absolute; height: 100%; width: 100%; top: 50px; left: 0; }
 /*BigVideo Player controls related CSS*/
 #big-video-wrap{overflow:hidden;position:absolute;height:100%;width:100%;top:0;left:0;}
 #big-video-vid,#big-video-image{position:absolute;}
@@ -29,29 +23,56 @@
 #big-video-control .ui-slider-handle{border-left:solid 1px #fff; width:16px;height:16px;position:absolute;top:-8px;}
 .transparent{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0);-moz-opacity:0;-khtml-opacity:0;opacity:0;}
 .vjs-big-play-button{display:none !important;}
-
-
-
 /*Navigation Logo position*/
 a.navbar-brand>img { position: relative; top: -29px; }
-
 /*Making the Navigation also 100% for all devices*/
 .navbar.navbar-inverse{ width: 100%; }
-
 /*Because of the static position of the BigVideo - applying absolute position to the main content*/
 .mainContent{ position: relative; top:580px; }
 .mainContent h2{text-align: center;}
 .mainContent h2>small{color: inherit;}
 video { display: block; }
 
-/*Logo Questionnaire Section*/
-#questionSection{
+/*Contact Us Form */
+#contactUsForm{
+    position: relative;
+    overflow: hidden;
+    font-family: 'weblysleek', sans-serif;
     /*border: 1px solid red;*/
     background-position: 50% -125px;
     font-size: 20px;
     margin-left:0px;
     margin-right:0px;
+    color: #fff;
+    border-top: 10px double rgba(0,0,0,.4);
+    border-radius: 15px;
+    border-bottom: 10px double rgba(0,0,0,.4);
+    background: url('../images/contactus_bg2.jpg') 0 0 repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    /*z-index: -1;*/
+    width: 100%;
+    padding: 0px 0px 0px 20px;
+    /*padding-top: 120px;*/
+    padding-bottom: 120px;
+    margin-bottom: 10px;
+}
+#contactUsForm h2{ color: #fff; }
+#contactUsForm h3{ color: #fff; }
+#contactUsForm hr{ position: relative; left: -1%; display: block; margin: 0px 0px 20px 0px; }
+
+
+/*Logo Questionnaire Section*/
+#questionSection{
     position: relative;
+    overflow: hidden;
+    font-family: 'weblysleek', sans-serif;
+    /*border: 1px solid red;*/
+    background-position: 50% -125px;
+    font-size: 20px;
+    margin-left:0px;
+    margin-right:0px;
     color: #fff;
     border-top: 10px double rgba(0,0,0,.4);
     border-radius: 15px;
@@ -67,18 +88,16 @@ video { display: block; }
     padding-bottom: 120px;
     margin-bottom: 10px;
 }
+#questionSection h2{ color: #fff; }
+#questionSection h3{ color: #fff; }
+#questionSection hr{ position: relative; left: -1%; display: block; margin: 0px 0px 20px 0px; }
+/*Intro*/
+#questionSection .introDiv { position: relative; }
 
-#questionSection h2{
-  color: #fff;
-}
-
-#questionSection hr{
-  position: relative;
-  left: -1%;
-  display: block;
-  margin: 0px 0px 20px 0px;
-}
-
+/*Footer Section*/
+footer{ margin-top: 30px; }
+footer ul{ list-style: none; }
+/*Mobile Devices*/
 @media screen and (max-device-width: 800px) {
     html { background: #000 no-repeat center center fixed; }
     #bgvid { display: none; }

@@ -79,26 +79,120 @@
       </ul>
       <hr>
     </div><!-- end:home -->
+
     <!-- aboutUs -->
     <div class="row" id="aboutUs" ng-controller="mainController">
-      <h2>About <small>Raysiti Solutions</small></h2>
+      <h2><span class="glyphicon glyphicon-map-marker"></span>About <small>Raysiti Solutions</small></h2>
       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
       <ul class="pager">
         <li><a href="#">Read More...</a></l
-      </ul>
-    </div><!-- end:aboutUs -->
-    <!-- questionSection -->
-    <div class="row" id="questionSection" ng-controller="logoController">
-      <h2>Do you need help <small>with your Logo ?</small></h2>
-      <hr>
-      <p>{{resultObj.heading}}</p>
-      <p>{{resultObj.lineFirst}}</p>
-      <p>{{resultObj.lineSecond}}</p>
-      <a href="#" class="btn btn-danger">Let's Get Started</a>
-    </div><!-- end:questionSection -->
-  </div><!-- end:container mainContent -->
+        </ul>
+      </div><!-- end:aboutUs -->
 
+
+
+
+      <!-- Container for the Quiz -->
+      <!-- questionSection -->
+      <div class="row" id="questionSection" ng-controller="logoController">
+        <h2><span class="glyphicon glyphicon-king"></span> Do you need help <small>with your Logo ?</small></h2>
+        <hr>
+        <div class="progressDiv"></div>
+        <div class="introDiv">
+          <p>{{resultObj.heading}}</p>
+          <ul>
+            <li>{{resultObj.lineFirst}}</li>
+            <li>{{resultObj.lineSecond}}</li>
+          </ul>
+          <a class="btn btn-danger">Let's Get Started</a>
+        </div>
+        <div class="questionDiv"></div>
+        <div class="resultsDiv"></div>
+      </div><!-- end:questionSection -->
+      <!-- end:Container for the Quiz -->
+
+      <!-- clientsSection -->
+      <div class="row" id="aboutUs" ng-controller="mainController">
+        <h2><span class="glyphicon glyphicon-user"></span> Our <small>Clients</small></h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+        <ul class="pager">
+          <li><a href="#">Read More...</a></l
+          </ul>
+        </div>
+      <!-- end:clientsSection -->
+
+      <!-- contactUsSection -->
+      <div class="row" id="contactUsForm" ng-controller="mainController">
+        <h2><span class="glyphicon glyphicon-copy"></span> Contact <small>Us</small></h2>
+        <hr>
+
+        <form class="contactUsForm">
+          <p>Do you require any assitance ?</p>
+          <ul>
+            <li>Name: </li>
+            <li>Email: </li>
+            <li>Subject: </li>
+          </ul>
+          <a class="btn btn-danger">Send Your Feedback</a>
+        </form>
+        <div class="questionDiv"></div>
+        <div class="resultsDiv"></div>
+      </div><!-- end:contactUsSection -->
+
+      <!-- FooterSection -->
+      <footer class="row-fluid">
+      		<div class="col-lg-12">
+      			<div class="col-lg-4 col-md-4 col-xl-4" style="width: 30%;">
+      				<ul class="unstyled">
+      					<li>GitHub<li>
+      					<li><a href="#">About us</a></li>
+      					<li><a href="#">Blog</a></li>
+      					<li><a href="#">Contact & support</a></li>
+      					<li><a href="#">Enterprise</a></li>
+      					<li><a href="#">Site status</a></li>
+      				</ul>
+      			</div>
+      			<div class="col-lg-4 col-md-4 col-xl-4" style="width: 30%;">
+      				<ul class="unstyled">
+      					<li>Services<li>
+      					<li><a href="#">Web analytics</a></li>
+      					<li><a href="#">Presentations</a></li>
+      					<li><a href="#">Code snippets</a></li>
+      					<li><a href="#">Job board</a></li>
+      				</ul>
+      			</div>
+      			<div class="col-lg-4 col-md-4 col-xl-4" style="width: 30%;">
+      				<ul class="unstyled">
+      					<li>More<li>
+      					<li><a href="#">Training</a></li>
+      					<li><a href="#">Students & teachers</a></li>
+      					<li><a href="#">The Shop</a></li>
+      					<li><a href="#">Plans & pricing</a></li>
+      					<li><a href="#">Contact us</a></li>
+      				</ul>
+      			</div>
+      		</div>
+      	</footer>
+      	<hr>
+      	<div class="row-fluid">
+      		<div class="span12">
+      			<div class="span8">
+      				<a href="#">Terms of Service</a>
+      				<a href="#">Privacy</a>
+      				<a href="#">Security</a>
+      			</div>
+      			<div class="span4">
+      				<p class="muted pull-right">&copy;2016 Raysiti Studios. All rights reserved</p>
+      			</div>
+      		</div>
+      	</div>
+      <!-- end:FooterSection -->
+
+
+
+    </div><!-- end:container mainContent -->
 
   <script type="text/javascript" src="scripts/lib/jquery-1.11.2.min.js"></script>
   <script type="text/javascript" src="scripts/lib/bootstrap.min.js"></script>
