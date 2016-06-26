@@ -1,5 +1,10 @@
 /*Custom WebSLeekly Fonts*/
 @font-face { font-family: weblysleek; src: url(../fonts/weblysleekuil.ttf); }
+@font-face { font-family: weblysleekBold; src: url(../fonts/weblysleekuisb.ttf); }
+/*This class is to centre the child elements*/
+.centered{ text-align: center; }
+.fontBold{font-family: 'weblysleekBold','weblysleek', sans-serif;}
+
 /*This is for IE to understand video tags*/
 /*This is for controlling the Width of BigVideo for mobile*/
 #big-video-wrap { overflow: hidden; position: absolute; height: 100%; width: 100%; top: 50px; left: 0; }
@@ -24,12 +29,13 @@
 .transparent{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0);-moz-opacity:0;-khtml-opacity:0;opacity:0;}
 .vjs-big-play-button{display:none !important;}
 /*Navigation Logo position*/
+.navbar{ font-family: 'weblysleekBold','weblysleek', sans-serif; font-size: 14px; }
 a.navbar-brand>img { position: relative; top: -29px; }
 /*Making the Navigation also 100% for all devices*/
 .navbar.navbar-inverse{ width: 100%; }
 /*Because of the static position of the BigVideo - applying absolute position to the main content*/
 .mainContent{ position: relative; top:580px; }
-.mainContent h2{text-align: center;}
+.mainContent h2,.btn{font-family: 'weblysleek', sans-serif;text-align: center;}
 .mainContent h2>small{color: inherit;}
 video { display: block; }
 
@@ -41,8 +47,10 @@ video { display: block; }
     /*border: 1px solid red;*/
     background-position: 50% -125px;
     font-size: 20px;
+    margin-top: 10px;
     margin-left:0px;
     margin-right:0px;
+    margin-bottom: 10px;
     color: #fff;
     border-top: 10px double rgba(0,0,0,.4);
     border-radius: 15px;
@@ -56,13 +64,10 @@ video { display: block; }
     padding: 0px 0px 0px 20px;
     /*padding-top: 120px;*/
     padding-bottom: 120px;
-    margin-bottom: 10px;
 }
 #contactUsForm h2{ color: #fff; }
 #contactUsForm h3{ color: #fff; }
 #contactUsForm hr{ position: relative; left: -1%; display: block; margin: 0px 0px 20px 0px; }
-
-
 /*Logo Questionnaire Section*/
 #questionSection{
     position: relative;
@@ -71,6 +76,8 @@ video { display: block; }
     /*border: 1px solid red;*/
     background-position: 50% -125px;
     font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     margin-left:0px;
     margin-right:0px;
     color: #fff;
@@ -86,7 +93,6 @@ video { display: block; }
     padding: 0px 0px 0px 20px;
     /*padding-top: 120px;*/
     padding-bottom: 120px;
-    margin-bottom: 10px;
 }
 #questionSection h2{ color: #fff; }
 #questionSection h3{ color: #fff; }
@@ -95,7 +101,7 @@ video { display: block; }
 #questionSection .introDiv { position: relative; }
 
 /*Footer Section*/
-footer{ margin-top: 30px; }
+footer{ font-family: 'weblysleek', sans-serif; font-size: 16px; margin-top: 30px; }
 footer ul{ list-style: none; }
 /*Mobile Devices*/
 @media screen and (max-device-width: 800px) {
