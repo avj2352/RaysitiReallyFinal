@@ -33,7 +33,8 @@
 a.navbar-brand>img { position: relative; top: -29px; }
 /*Making the Navigation also 100% for all devices*/
 .navbar.navbar-inverse{ width: 100%; }
-/*logoBannerContent*/
+
+/*logoBannerContent for Raysiti PNG Logo*/
 .logoBannerContent{
   /*border: 1px solid red;*/
   position: absolute;
@@ -51,10 +52,10 @@ a.navbar-brand>img { position: relative; top: -29px; }
   margin: 0; padding: 0;
 }
 
+
 .mainContent h2,.btn{font-family: 'weblysleek', sans-serif;text-align: center;}
 .mainContent h2>small{color: inherit;}
 video { display: block; }
-
 /*Contact Us Form */
 #contactUsForm{
     position: relative;
@@ -121,8 +122,6 @@ padding-bottom: 15px;
 }
 /*Questions and Answers*/
 #questionSection .questionDiv { position: absolute;}
-
-
 /*Footer Section*/
 footer{ font-family: 'weblysleek', sans-serif; font-size: 16px; margin-top: 30px; }
 footer ul{ list-style: none; }

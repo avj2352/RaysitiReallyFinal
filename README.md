@@ -1,4 +1,32 @@
 ####Generated Favicon and Links
+###NOTE: In order to load images, The script checks for supersized function - which apparently is part of the wordpress theme
+        https://wordpress.org/support/topic/getting-js-error-on-gallery-page-jquerysupersized-not-a-function
+
+###NOTE: BigVideo has a better way of handling to show images, so we need to come up with a jQuery function to invoke the following function for mobile Devices:
+```
+BigVideo.show = function(source,options) {
+  if (options === undefined) options = {};
+isAmbient = options.ambient === true;
+if (isAmbient || options.doLoop) settings.doLoop = true;
+if (typeof(source) === 'string') {
+var ext = source.substring(source.lastIndexOf('.')+1);
+if (ext === 'jpg' || ext === 'gif' || ext === 'png') {
+  showPoster(source);
+} else {
+  if (options.altSource && navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+    source = options.altSource;
+  }
+  playVideo(source);
+  isQueued = false;
+}
+} else {
+playlist = source;
+currMediaIndex = 0;
+playVideo(playlist[currMediaIndex]);
+isQueued = true;
+}
+};//end:show()
+```
 
 ####Created a Logo Questionnaire Static Div Content - 25th June 2016
 

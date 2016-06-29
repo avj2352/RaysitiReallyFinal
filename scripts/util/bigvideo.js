@@ -301,7 +301,7 @@
 				playVideo(playlist[currMediaIndex]);
 				isQueued = true;
 			}
-        };
+    };//end:show()
 
         // Expose Video.js player
         BigVideo.getPlayer = function() {
