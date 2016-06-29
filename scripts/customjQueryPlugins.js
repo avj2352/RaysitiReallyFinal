@@ -12,6 +12,8 @@
     // <script type="text/javascript" src="scripts/util/jquery-ui-1.8.22.custom.min.js"></script>
     // <script type="text/javascript" src="scripts/util/bigvideo.js"></script>
     // <script src="http://vjs.zencdn.net/c/video.js"></script>
+
+    // STEP 1: Check if the document is touchDevice enabled or not!!
     try {
       isTouchDevice = true;
       document.createEvent('TouchEvent');
@@ -19,29 +21,26 @@
       isTouchDevice = false;
     }
 
+    //If it's not a Touch Device then it must be a desktop :P
+    //Load the video
     if(!isTouchDevice){
-
-      //<!-- Load Video for mobile desktop -->
+      //<!-- Load Video for desktop -->
       $(function() {
         var BV = new $.BigVideo({useFlashForFirefox:false});
         BV.init();
-        BV.show('vids/video.webm', {altSource:'vids/video.ogv'}, {altSource:'vids/video.webm'});
+        BV.show('vids/video.webm', {altSource:'vids/video.mp4'}, {altSource:'vids/video.webm'});
       });
-
       //<!-- Allow to open the site -->
       siteStartOpen = true;
-
     }else{
-
-      jQuery(function($){
-        $.supersized({
-          slides 	:  	[	// Slideshow Images, image_small attribute is used to load the mobile version image, main_title attribute is used to add the image tile div
-            {image : 'images/highDef.jpg'}
-          ]
-        });
+      //<!-- Load img for mobile -->
+      $(function() {
+        var BV = new $.BigVideo({useFlashForFirefox:false});
+        BV.init();
+        BV.show('images/highDef.jpg', {altSource:'vids/video.webm'}, {altSource:'vids/video.mp4'});
       });
-
-    }
-
+      //<!-- Allow to open the site -->
+      siteStartOpen = true;
+    }//endif:!isTouchDevice
   });
 }(jQuery));//jQuery IIFE

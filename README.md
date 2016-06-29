@@ -1,3 +1,4 @@
+## SO Many Errors in the video.js it's difficult to debug :@
 ####Generated Favicon and Links
 ###NOTE: In order to load images, The script checks for supersized function - which apparently is part of the wordpress theme
         https://wordpress.org/support/topic/getting-js-error-on-gallery-page-jquerysupersized-not-a-function
@@ -27,6 +28,34 @@ isQueued = true;
 }
 };//end:show()
 ```
+#### Added the following condition check for mobile and desktop devices..Website can now show img for mobile and video for desktop
+```
+//If it's not a Touch Device then it must be a desktop :P
+//Load the video
+if(!isTouchDevice){
+  //<!-- Load Video for desktop -->
+  $(function() {
+    var BV = new $.BigVideo({useFlashForFirefox:false});
+    BV.init();
+    BV.show('vids/video.webm', {altSource:'vids/video.mp4'}, {altSource:'vids/video.webm'});
+  });
+  //<!-- Allow to open the site -->
+  siteStartOpen = true;
+}else{
+  //<!-- Load img for mobile -->
+  $(function() {
+    var BV = new $.BigVideo({useFlashForFirefox:false});
+    BV.init();
+    BV.show('images/highDef.jpg', {altSource:'vids/video.webm'}, {altSource:'vids/video.mp4'});
+  });
+  //<!-- Allow to open the site -->
+  siteStartOpen = true;
+}//endif:!isTouchDevice
+});
+}(jQuery));//jQuery IIFE
+```
+
+####Added centralized image to the video Content http://stackoverflow.com/questions/12415661/using-marginauto-to-vertically-align-div
 
 ####Created a Logo Questionnaire Static Div Content - 25th June 2016
 
